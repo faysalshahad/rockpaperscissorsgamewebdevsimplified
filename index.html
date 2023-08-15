@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Pepper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- linking favicon icon for the browser into this html file-->
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="text1">
+        <h1>Rock Pepper Scissors Game</h1>
+    </div>
+    <div class="selections">
+        <button class="selection" data-selection="rock">✊</button>
+        <button class="selection" data-selection="paper">✋</button>
+        <button class="selection" data-selection="scissors">✌️</button>
+    </div>   
+    <div class="results">
+        <div>
+            My Score
+            <span class="result-score" data-your-score>0</span>
+        </div>
+        <div data-final-column>
+            Computer Score
+            <span class="result-score" data-computer-score>0</span>
+        </div>
+    </div>
+    <!-- <div class="result-selection winner"></div>
+    <div class="result-selection"></div> -->
+
+    <script src="javascript.js"></script>
+</body>
+</html>

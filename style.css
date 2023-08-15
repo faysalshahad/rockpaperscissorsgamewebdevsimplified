@@ -1,0 +1,76 @@
+body{
+    background-color: #FFF9C9;
+}
+
+.selections{
+    /*To bring all the items in the center of the page*/
+    display: flex;
+    justify-content: center;    
+}
+
+.text1{
+     /*To bring all the items in the center of the page*/
+     display: flex;
+     justify-content: center;
+}
+
+h1{
+    color: #862B0D;
+}
+
+.selection{
+    /*Getting rid of the background white colour from our emojis 
+    And having an blending looks or feels to our website*/
+    background: none;
+    border: none;
+    /*Deleting the outline which gets created automatically around the border*/
+    outline: none;
+    /*Changing the mouse cursor pointer*/
+    cursor: pointer;
+    /*Enhancing the sizes of our emojis*/
+    font-size: 5rem;
+    /*Having an animation effect bit slowly over the period of 100ms*/
+    transition: 100ms;
+    /*Adding Padding to the Right side of each emoji*/
+    padding-right: 3rem;
+}
+
+.selection:hover{
+    /*Emoji Image sizes will be enhanced when the user hover the mouse over them*/
+    transform: scale(1.5);
+}
+
+.results{
+    /*Creating a little space between emojis and texts*/
+    margin-top: 2rem;
+    /*To bring all the items in the center of the page*/
+    display: grid;
+    justify-content: center;
+    /*Creating two columns grid. 2 represents 2 column and 1fr represents
+    equal sizes for each column.*/
+    grid-template-columns: repeat(2, 1fr);
+    /*Having the texts at the center of each column*/
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #1B1A17;
+}
+
+.result-score{
+    margin-left: .1rem;
+    font-size: 1.7rem;
+    color: #B31312;
+
+}
+
+.result-selection{
+    /*Making the content or item less visible or less stand out comparing 
+    to other html content*/
+    opacity: .5;
+}
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 4rem;
+
+}
